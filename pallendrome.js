@@ -19,7 +19,7 @@ function palendrome(input) {
   }
 }
 
-palendrome('level');
+console.log(palendrome('level'));
 
 function palendromestring(input) {
   if (input.length > 1) {
@@ -34,7 +34,7 @@ function palendromestring(input) {
     }
   }
 }
-palendromestring('madam');
+console.log(palendromestring('madam'));
 
 let totalPallendrome = (input, callback) => {
   let arr = input.split(' ');
@@ -50,4 +50,4 @@ let totalPallendrome = (input, callback) => {
   return pallen;
 };
 
-totalPallendrome('i am vikas , madam and i have a racecar', palendromestring);
+console.log(totalPallendrome('i am vikas , madam and i have a racecar', palendromestring));
