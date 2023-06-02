@@ -17,3 +17,4 @@ function reverse1(input) {
   return arr.join(' ');
 }
 console.log(reverse1('i am a good boy'));
+// anagram
