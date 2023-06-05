@@ -46,13 +46,12 @@ function twobig(input) {
     number = input[0];
     if (input[i] > number) {
       number = input[i];
-      input.splice(i, 1);
     }
   }
   arr.push(number);
+  number = 0;
   for (let i = 0; i < input.length; i++) {
-    number = input[0];
-    if (input[i] > number && input[i] !== arr[0]) {
+    if (input[i] > number && input[i] < arr[0]) {
       number = input[i];
     }
   }
