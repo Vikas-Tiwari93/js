@@ -20,3 +20,25 @@ console.log(
   ])
 );
 //new method
+
+//2a2b3a
+
+function twoa(input) {
+  let output = '';
+  let count = 1;
+  for (let i = 1; i < input.length; i++) {
+    // a(0)===a(1) for i=1 ..a2
+    if (input[i - 1] === input[i]) {
+      console.log(input[i]);
+      count += 1;
+    } else {
+      output = output + input[i - 1] + count;
+      count = 1;
+    }
+    if (i === input.length - 1) {
+      output = output + input[i] + count;
+    }
+  }
+  return output;
+}
+console.log(twoa('aabbaaabbbccc'));
